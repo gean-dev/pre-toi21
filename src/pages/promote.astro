@@ -6,17 +6,21 @@ import { Image } from "astro:assets";
 import logo from "../assets/GEANDEV.png";
 ---
 
-<Layout title="Gean Dev Pre TOI20">
+<Layout title="Gean Dev Pre TOI21">
   <main class="w-full text-white bg-slate-800">
     <div class="h-screen" id="greet">
       <div class="h-full flex justify-center items-center flex-col text-center">
-        <Image src={logo} alt="logo" class="object-cover"
+        <Image
+          src={logo}
+          alt="logo"
+          class="object-cover"
           style="max-width: 300px;"
         />
-        <h1 class="text-5xl font-bold">
-          Pre TOI <span class="line-through">19</span><span class="text-red-300"
-            >20</span
-          > by <span class="text-orange-500"
+        <h1 class="text-5xl font-bold mt-5">
+          Pre TOI
+          <!-- <span class="line-through">19</span> -->
+          <!-- <span class="text-red-300 line-through">20</span> -->
+          <span class="text-red-400">21</span> by <span class="text-orange-500"
             ><a
               href="https://github.com/gean-dev"
               target="_blank"
@@ -24,25 +28,50 @@ import logo from "../assets/GEANDEV.png";
             ></span
           >
         </h1>
-        <h2 class="text-3xl pt-4">
+        <!-- <h2 class="text-3xl pt-4">
           Gean Dev by Admin <span class="text-red-500"
             ><a href="https://โอถอก.ไทย" target="_blank" rel="noopener"
               >OTOG©</a
             ></span
           >
-        </h2>
+        </h2> -->
         <div class="text-2xl pt-3">
           <p>
-            จัดขึ้น
+            จัดขึ้น วันที่
             <span
               ><a
-                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Pre+TOI+20+Day+1&iso=20240511T18&p1=28&ah=5"
+                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Pre+TOI+21+Day+1&iso=20250506T18&p1=28&ah=5"
                 target="_blank"
-                rel="noopener">
-                <span class="text-blue-400">11-12 May 2024</span>
-                <span class="text-pink-300">18:00-23:00 </span>
-                <span class="text-yellow-500">GMT+7</span>
+                rel="noopener"
+              >
+                <span class="text-cyan-400">6</span>
               </a>
+              และ
+              <a
+                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Pre+TOI+21+Day+2&iso=20250507T18&p1=28&ah=5"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="text-cyan-400">7</span>
+              </a>
+              May 2025
+              <span class="text-pink-300">18:00 - 23:00</span>
+            </span>
+          </p>
+          <p>
+            ด้วยระบบ
+            <span
+              ><a
+                href="https://cms-dev.github.io/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="text-yellow-500">CMS</span>
+              </a>
+              แบบเดียวกับ
+              <span class="text-orange-400">TOI</span>
+              และ
+              <span class="text-red-400">IOI</span>
               <span><a href="#about">😱</a></span>
             </span>
           </p>
