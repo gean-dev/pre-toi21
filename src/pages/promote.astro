@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ArrowLeft from "@astropub/icons/ArrowLeft";
+
+import { Image } from "astro:assets";
+import logo from "../assets/GEANDEV.png";
+---
+
+<Layout title="Gean Dev Pre TOI20">
+  <main class="w-full text-white bg-slate-800">
+    <div class="h-screen" id="greet">
+      <div class="h-full flex justify-center items-center flex-col text-center">
+        <Image src={logo} alt="logo" class="object-cover"
+          style="max-width: 300px;"
+        />
+        <h1 class="text-5xl font-bold">
+          Pre TOI <span class="line-through">19</span><span class="text-red-300"
+            >20</span
+          > by <span class="text-orange-500"
+            ><a
+              href="https://github.com/gean-dev"
+              target="_blank"
+              rel="noopener">Gean Dev</a
+            ></span
+          >
+        </h1>
+        <h2 class="text-3xl pt-4">
+          Gean Dev by Admin <span class="text-red-500"
+            ><a href="https://โอถอก.ไทย" target="_blank" rel="noopener"
+              >OTOG©</a
+            ></span
+          >
+        </h2>
+        <div class="text-2xl pt-3">
+          <p>
+            จัดขึ้น
+            <span
+              ><a
+                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Pre+TOI+20+Day+1&iso=20240511T18&p1=28&ah=5"
+                target="_blank"
+                rel="noopener">
+                <span class="text-blue-400">11-12 May 2024</span>
+                <span class="text-pink-300">18:00-23:00 </span>
+                <span class="text-yellow-500">GMT+7</span>
+              </a>
+              <span><a href="#about">😱</a></span>
+            </span>
+          </p>
+          <p class="text-2xl font-bold my-2 text-purple-300">
+            Registration link in bio
+          </p>
+          <!-- <button class="rounded-md bg-green-600 px-4 py-2 my-3">
+            <a href="ranking/" target="_blank" rel="noopener">
+              <p class="text-white text-lg">ดูอันดับการแข่งขัน</p>
+            </a>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("reveal-prize")!.addEventListener("click", () => {
+      if (document.getElementById("reveal-prize")!.innerHTML != "ไม่มี 😭") {
+        document.getElementById("reveal-prize")!.innerHTML = "ไม่มี 😭";
+        document
+          .getElementById("reveal-prize")!
+          .classList.remove("bg-purple-400");
+        document.getElementById("reveal-prize")!.classList.add("text-8xl");
+      } else {
+        document
+          .querySelector("#register")!
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script></Layout
+>
