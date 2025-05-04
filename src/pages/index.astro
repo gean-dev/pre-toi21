@@ -5,6 +5,8 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
 import { Image } from "astro:assets";
 import logo from "../assets/train-logo.png";
 import cms from "../assets/cms-gean.png";
+import discord from "../assets/discord.png"
+import backshot from "../assets/trainbackshots.png"
 ---
 
 <Layout title="Gean Dev Pre TOI21">
@@ -158,6 +160,15 @@ import cms from "../assets/cms-gean.png";
           <!-- <div class="flex justify-center items-center overflow-hidden"
           style="width: 120px; height: 40px"> -->
           <Image src={cms} alt="sponsor" class="h-1/8 w-auto" />
+          <div class="pt-3 text-2xl flex flex-row">
+            <p class="text-blue-400">ติดต</p>
+            <p class="text-yellow-200">าม</p>
+            <p>&nbsp;</p>
+            <p class="text-green-300">ข้าวสาร</p>
+            <p>&nbsp;</p>
+            <p><span>ที่</span></p>
+          </div>
+          <Image src={discord} alt="sponsor" class="h-1/8 w-auto" />
           <!-- </div> -->
           <div class="pt-3 text-2xl flex flex-row">
             <p class="text-green-400 py-1">รู้ทราบ</p>
@@ -165,7 +176,7 @@ import cms from "../assets/cms-gean.png";
             <div>
               <button class="rounded-md bg-cyan-600 px-4 py-1">
                 <a
-                  href="https://cms.geandev.dev/"
+                  href="https://discord.gg/88VdevjVRV"
                   target="_blank"
                   rel="noopener"
                 >
@@ -194,9 +205,27 @@ import cms from "../assets/cms-gean.png";
           <div class="h-full flex items-center">
             <h1 class="text-3xl font-bold">
               <span><a href="#greet">อ้าว</a></span><span
-                class="text-purple-400">ไม่มีอะไร :D</span
+                class="text-purple-400"><a href="#backshot">ไม่มีอะไร :D</a></span
               >
             </h1>
+          </div>
+          <!-- <div class="mb-5">
+            <p class="text-xl">
+              Made with ❤️ by <a href="https://github.com/gean-dev">Gean Dev</a>
+            </p>
+          </div> -->
+        </div>
+      </div>
+      
+      <div class="h-screen" id="backshot">
+        <div class="h-full flex flex-col items-center">
+          <div class="h-full flex flex-col items-center mt-40 gap-y-10">
+            <h1 class="text-3xl font-bold">
+              <span><a href="#greet">มีแล้ว</a></span><span
+                class="text-orange-400"> :)</span
+              >
+            </h1>
+            <Image src={backshot} alt="sponsor" class="h-1/2 w-auto" />
           </div>
           <div class="mb-5">
             <p class="text-xl">
