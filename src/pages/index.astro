@@ -81,7 +81,13 @@ import discord from "../assets/discord.png";
               <p class="text-white text-lg">ดูอันดับการแข่งขัน</p>
             </a>
           </button> -->
-          <p class="text-sm mt-2">(เลื่อนลง)</p>
+          <button class="rounded-md bg-green-600 px-4 py-1 text-sm mt-4">
+            <a
+              href="#about"
+            >
+              <p class="text-white">next</p>
+            </a>
+          </button>
         </div>
       </div>
 
@@ -101,6 +107,13 @@ import discord from "../assets/discord.png";
             >นน
             </span>
           </div>
+          <button class="rounded-md bg-green-600 px-4 py-1 text-sm mt-4">
+            <a
+              href="#people"
+            >
+              <p class="text-white">next</p>
+            </a>
+          </button>
         </div>
       </div>
 
@@ -175,9 +188,17 @@ import discord from "../assets/discord.png";
               ><p class="pt-1 font-bold text-blue-500">Marszpace</p></a
             >
           </div>
+          <button class="rounded-md bg-green-600 px-4 py-1 text-sm mt-4">
+            <a
+              href="#prize"
+            >
+              <p class="text-white">next</p>
+            </a>
+          </button>
           <h2 class="text-3xl font-bold pt-3 text-slate-800">Sponsored โดย</h2>
+          
           <a href="#prize"
-            ><p class="pt-1 font-bold text-slate-800">icy</p></a
+            ><p class="pt-1 font-bold text-slate-800 text-3xl ">icy</p></a
           >
         </div>
       </div>
@@ -293,10 +314,28 @@ import discord from "../assets/discord.png";
     document.getElementById("reveal-prize")!.addEventListener("click", () => {
       if (
         document.getElementById("reveal-prize")!.innerHTML !=
-        "พิเศษสำหรับ 16 อันดับแรก ได้ 0️⃣ บาท"
+        `
+          <p>พิเศษสำหรับ 16 อันดับแรก ได้ 0️⃣ บาท</p>
+          <button class="rounded-md bg-green-600 px-4 py-1 text-sm">
+            <a
+              href="#register"
+            >
+              <p class="text-white">next</p>
+            </a>
+          </button>
+        `
       ) {
         document.getElementById("reveal-prize")!.innerHTML =
-          "พิเศษสำหรับ 16 อันดับแรก ได้ 0️⃣ บาท";
+        `
+          <p>พิเศษสำหรับ 16 อันดับแรก ได้ 0️⃣ บาท</p>
+          <button class="rounded-md bg-green-600 px-4 py-1 text-sm">
+            <a
+              href="#register"
+            >
+              <p class="text-white">next</p>
+            </a>
+          </button>
+        `
         document
           .getElementById("reveal-prize")!
           .classList.remove("bg-purple-400");
